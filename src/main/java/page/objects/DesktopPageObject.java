@@ -44,11 +44,11 @@ public class DesktopPageObject extends Base {
 	}
 
 	@FindBy(id = "input-quantity")
-	private WebElement quantity;
+	private WebElement quantities;
 
 	public void selectQuantity(String string) {
-		quantity.clear();
-		quantity.sendKeys(string);
+		quantities.clear();
+		quantities.sendKeys(string);
 	}
 
 	@FindBy(id = "button-cart")
